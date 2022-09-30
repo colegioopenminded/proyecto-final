@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    /*Bloque solido del header*/
+    background-color: rgb(58, 58, 58);
+    height: 150px;
+}
+#logo{
+    /*Imagen del logo*/
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.menu ul li{   
+    /*Forma del Menu*/ 
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: right;
+    list-style: none;
+    border-radius: 15px;
+}
+.menu ul{
+    /*Menu General*/
+    margin-top: -45px;
+    margin-right: 40%;
+}
+.menu ul a{
+    /*Lista*/
+    display: block;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.menu ul li:hover{
+    background-color: rgb(167, 167, 167);
+    
+}
+.log{
+    /*menu--->Login*/
+   background-color: rgb(24, 24, 24);
+}
+.iconIG{
+    /*Icono redireccional de Instagram*/
+    text-align: right;
+    margin-top: -120px;
+
+}
+
+.iconFB{
+    /*Icono redireccional de Faceboock*/
+    text-align: right;
+    margin-right: 50px;
+    margin-top: -45px;
+
+}
+/*Fin Encabezado*/
+/*Incio de Login*/
+
+.contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    margin-top: 6%;
+
+}
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+.contenedor .usuario{
+    position: relative;
+}
+.contenedor .usuario input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+.contenedor .usuario label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    pointer-events: none;
+    transition: 5s;
+}
+.contenedor .usuario input:focus ~ label,
+.contenedor .usuario input:focus ~ label{
+    top: -20px;
+    left: 0;
+    color: aqua;
+    font-size: 12px;
+}
+.contenedor form a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: aqua;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 4px;
+    letter-spacing: 3px;
+}
+.contenedor a:hover{
+    background-color: aqua;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px aqua,
+                0 0 25px aqua,
+                0 0 50px aqua,
+                0 0 100px aqua;
+}
+.contenedor a span{
+    position: absolute;
+    display: block; 
+}
+.contenedor a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,
+    aqua);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+/*Animacion pt2*/
+.contenedor a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,
+    aqua);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+/*Animacion pt3*/
+.contenedor a span:nth-child(3){
+    right: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(270deg,transparent,
+    aqua);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+/*Animacion pt4*/
+.contenedor a span:nth-child(4){
+   
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(270deg,transparent,
+    aqua);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
+/*Pie de Página*/
+.txtcontacto{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtinfo{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+    width: 600px;
+}
+.copy{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(17, 17, 17);
+
+}
+footer{
+    background-color: rgb(30, 30, 30);
+    margin-top: -5px;
+
+}
+#fondo{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
